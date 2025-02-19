@@ -19,6 +19,9 @@ export class TasksService {
   }
 
   create(task: Partial<Task>) {
+    if (typeof task.dueDate === 'string' && task.dueDate === '') {
+      task.dueDate = undefined;
+    }
     return this.taskRepository.save(task);
   }
 
