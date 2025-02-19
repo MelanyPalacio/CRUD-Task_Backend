@@ -1,16 +1,25 @@
 ## Description
-Aplicación parte backend que permita gestionar tareas. El principal enfoque será la
-implementación del frontend con Angular 17, se implementará con NestJS,
-TypeORM y MySQL para exponer los endpoints.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Este repositorio contiene la parte **backend** de una aplicación de gestión de tareas.  
+Está construido con **NestJS**, usa **TypeORM** para la comunicación con **MySQL** y expone una API RESTful para ser consumida por el frontend en **Angular 17**.
+
+## 🚀 Tecnologías utilizadas
+- NestJS
+- TypeORM
+- MySQL
+- Docker
+
+---
 
 ## Project setup
-
+- Instalar dependencias
 ```bash
 $ npm install
+```
 
-# MySql en docker
+- Levantar MySQL con Docker (Opcional)
+
+```bash
 $ docker-compose up -d
 ```
 
@@ -19,5 +28,4 @@ $ docker-compose up -d
 ```bash
 # development
 $ npm run start:dev
-
 ```
